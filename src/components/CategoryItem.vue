@@ -13,9 +13,9 @@
             class="character-card__status-icon"
             :class="[
               character.status == 'Alive'
-                ? 'character-card__red'
-                : character.status == 'Dead'
                 ? 'character-card__green'
+                : character.status == 'Dead'
+                ? 'character-card__red'
                 : '',
             ]"
           ></span>

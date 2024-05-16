@@ -2,7 +2,9 @@
   <div>
     <div class="backdrop" @click="closeModal"></div>
     <div class="card modal">
-      <header class="header"><h2>Введите коректное имя</h2></header>
+      <header class="header">
+        <h2>Введите корректное имя или ошибка сервера</h2>
+      </header>
       <div class="content">
         <p>Please enter a valid name</p>
       </div>
