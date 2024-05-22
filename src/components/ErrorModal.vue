@@ -3,13 +3,13 @@
     <div class="backdrop" @click="closeModal"></div>
     <div class="card modal">
       <header class="header">
-        <h2>Введите корректное имя или ошибка сервера</h2>
+        <h2>Enter the correct name or a server error</h2>
       </header>
       <div class="content">
         <p>Please enter a valid name</p>
       </div>
       <footer class="actions">
-        <button class="button" @click="closeModal" type="button">Okay</button>
+        <button class="home__button" @click="closeModal">Okay</button>
       </footer>
     </div>
   </div>
@@ -63,14 +63,7 @@ const closeModal = () => emit('handleShow', false);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
 }
-.button {
-  background: #4f005f;
-  border: 1px solid #4f005f;
-  color: #fff;
-  cursor: pointer;
-  font: inherit;
-  padding: 0.25rem 1rem;
-}
+
 @media (min-width: 768px) {
   .modal {
     left: calc(50% - 20rem);

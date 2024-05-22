@@ -5,15 +5,15 @@
         <input
           v-model="state.nameFilter"
           type="text"
-          placeholder="Имя персонажа"
+          placeholder="Character Name"
         />
         <select v-model="state.statusFilter" class="select">
-          <option value="">Статус</option>
-          <option value="alive">Живой</option>
-          <option value="dead">Мертвый</option>
-          <option value="unknown">Неизвестно</option>
+          <option value="">Status</option>
+          <option value="alive">Alive</option>
+          <option value="dead">Dead</option>
+          <option value="unknown">Is unknown</option>
         </select>
-        <button class="home__button" @click="applyFilter">Применить</button>
+        <button class="home__button" @click="applyFilter">Apply</button>
       </div>
     </div>
 
@@ -34,14 +34,14 @@
         :disabled="state.currentPage === 1"
         @click="prevPage"
       >
-        Предыдущая
+        Previous
       </button>
       <button
         class="home__button"
         :disabled="state.currentPage === state.pageCountSize - 1"
         @click="nextPage"
       >
-        Следующая
+        Next
       </button>
     </div>
     <ModalError v-if="state.closeModal" @handleShow="handleShow" />
